@@ -101,7 +101,7 @@ Databasen tolkar ```%```som vad som helst och i detta fall betyder det att name 
 Ifall vi har massor av information i vår databas är det bra att kunna få endast den information vi är intresserade av. Det gör vi med SELECT men vi får skriva till ett eller flera villkor som talar om vad vi är intresserade av. 
 1. Om vi vill ha all information om alla som heter Smith i sirname skriver vi:<br>
 ```SELECT * FROM repetition2 WHERE sirname=’Smith’;```
-2. **Skriv en fråga så att du får all information om alla som heter Pigg i sirname.**
+2. **Skriv en fråga så att du får all information om alla som heter Doe i sirname.**
 3. Om vi inte vill ha all information om alla som heter Smith i sirname så får vi specificera själva vad vi vill veta genom att skriva efter SELECT vilka fält vi vill kolla på:
 ```SELECT name,age FROM repetition2 WHERE sirname=’Smith’;```
 4. Vi kan även jämföra siffror och kolla på alla som till exempel är äldre än 10 år:<br>
