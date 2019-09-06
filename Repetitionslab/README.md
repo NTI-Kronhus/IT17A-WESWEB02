@@ -112,7 +112,7 @@ Ifall vi har massor av information i vår databas är det bra att kunna få enda
 ## Steg 8: 
 #### Nu ska ni få tänka själva och göra några uppgifter. 
 #### Fråga 1-4 är obligatoriska. Fråga 5 är valfri.
-Jag vill att ni svarar på frågorna i ett textdokument* och mailar era svar till joakim.ohlsson@ntig.se<br>
+Jag vill att ni svarar på frågorna i ett textdokument* och lägger till det i svar när ni lämnar in uppgiften i classroom.<br>
 **Hinner ni inte klart under lektionen så gör ni klart det hemma tills nästa lektion!**
 
 \* *De som vill och kan får gärna skapa ett repo på GitHub och lägga upp sina svar där istället!*
