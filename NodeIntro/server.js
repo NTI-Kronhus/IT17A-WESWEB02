@@ -1,9 +1,12 @@
 const { createServer } = require("http");
 const { createReadStream } = require("fs");
 const { decode } = require("querystring");
+var hej = require("./myModule");
 
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/";
+
+hej.hej();
 
 const sendFile = (response, status, type, filePath) => {
   response.writeHead(status, { "Content-Type": type });
