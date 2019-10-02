@@ -8,4 +8,12 @@ img {
   border: solid 2px white;
   padding: 2px;
   width: 300px;
+  transition: transform 2s, width 2s;
+}
+
+img:hover {
+  border: solid 2px white;
+  padding: 2px;
+  width: 500px;
+  transform: rotate(360deg);
 }
