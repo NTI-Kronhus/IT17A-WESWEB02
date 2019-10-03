@@ -8,12 +8,16 @@ img {
   border: solid 2px white;
   padding: 2px;
   width: 300px;
-  transition: transform 2s, width 2s;
+  transition: transform 2s;
 }
 
 img:hover {
   border: solid 2px white;
   padding: 2px;
-  width: 500px;
-  transform: rotate(360deg);
+  transform: rotate(1080deg);
+}
+
+nav {
+  padding: 4px;
+  box-shadow: rgb(34, 44, 44);
 }

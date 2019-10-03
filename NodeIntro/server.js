@@ -1,12 +1,7 @@
 const { createServer } = require("http");
 const { createReadStream } = require("fs");
 const { decode } = require("querystring");
-var hej = require("./myModule");
-
-var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/";
-
-hej.hej();
+const { updateDb } = require("./myModule");
 
 const sendFile = (response, status, type, filePath) => {
   response.writeHead(status, { "Content-Type": type });
@@ -21,32 +16,7 @@ createServer((request, response) => {
     });
     request.on("end", () => {
       const { name, email, message } = decode(body);
-      MongoClient.connect(url, function (err, db) {
-        if (err) throw err;
-        var dbo = db.db("test");
-        var query = { email: `${email}` };
-        dbo.collection("WESWEB").find(query).toArray(function (err, result) {
-          if (err) throw err;
-          console.log("DEBUG")
-          console.log(result);
-          if (result.length!=0) {
-            var newvalues = { $set: { name: `${name}`, message: `${message}` } };
-            dbo.collection("WESWEB").updateOne(query, newvalues, function (err, res) {
-              if (err) throw err;
-              console.log("1 document updated");
-              db.close();
-            });
-          } else {
-            var myobj = { name: `${name}`, email: `${email}`, message: `${message}` };
-            dbo.collection("WESWEB").insertOne(myobj, function (err, res) {
-              if (err) throw err;
-              console.log("1 document inserted");
-              db.close();
-            });
-          }
-        });
-      });
-      console.log(`${name} (${email}): ${message}`);
+      updateDb(email, name, message);
     });
   }
 
