@@ -31,4 +31,3 @@ exports.updateDb = function (email, name, message)
         });
       });
 };
-
