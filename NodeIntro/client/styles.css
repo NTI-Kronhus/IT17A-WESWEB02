@@ -16,21 +16,19 @@ img:hover {
   padding: 2px;
 }
 
-nav {
-  padding: 4px;
-  box-shadow: rgb(34, 44, 44);
-  place-content: center;
+h1 {
+  padding: 5px;
+  background-color: rgb(30, 35, 36);
 }
 
-input {
-  width: 100;
+label { 
+  font-size: 16px;
+}
+
+form {
+  padding: 5px;
 }
 
 div {
   padding: 5px;
-}
-
-h1 {
-  padding: 5px;
-  background-color: rgb(30, 35, 36);
 }
