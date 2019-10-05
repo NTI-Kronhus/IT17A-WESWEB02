@@ -25,8 +25,12 @@ createServer((request, response) => {
       return sendFile(response, 200, "text/html", "./client/home-page.html");
     case "/contact":
       return sendFile(response, 200, "text/html", "./client/contact.html");
+    case "/codeofconduct":
+      return sendFile(response, 200, "text/html", "./client/codeofconduct.html");
     case "/img/niklas.jpeg":
       return sendFile(response, 200, "image/jpeg", "./client/niklas.jpeg");
+    case "/img/become-a-good-programmer.jpeg":
+      return sendFile(response, 200, "image/jpeg", "./client/become-a-good-programmer.jpg");
     case "/styles.css":
       return sendFile(response, 200, "text/css", "./client/styles.css");
     default:

@@ -1,27 +1,25 @@
 body {
-  background-color: #eee;
-  color: #006;
-  font-family: verdana;
+  background-color: rgb(30, 35, 36);
+  color: rgb(209, 174, 128);
+  font-family: monospace;
 }
 
 img {
-  border: solid 2px white;
+  border: solid 2px rgb(71, 54, 43);
   padding: 2px;  
   border-radius: 20px;
   width: 300px;
-  transition: transform 50ms;
 }
 
 img:hover {
-  border: solid 2px white;
+  border: solid 2px rgb(88, 123, 156);
   padding: 2px;
-  display: flex;
-  justify-content: center;
 }
 
 nav {
   padding: 4px;
   box-shadow: rgb(34, 44, 44);
+  place-content: center;
 }
 
 input {
@@ -30,4 +28,9 @@ input {
 
 div {
   padding: 5px;
+}
+
+h1 {
+  padding: 5px;
+  background-color: rgb(30, 35, 36);
 }
