@@ -29,6 +29,17 @@ form {
   padding: 5px;
 }
 
+* {
+  padding: 0; 
+  margin: 0; 
+}
+
+canvas {
+  background: rgb(134, 128, 114); 
+  display: block; 
+  margin: 0 auto; 
+}
+
 div {
   padding: 5px;
 }
