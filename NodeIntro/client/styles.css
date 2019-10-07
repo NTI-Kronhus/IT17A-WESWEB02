@@ -8,7 +8,6 @@ img {
   border: solid 2px rgb(71, 54, 43);
   padding: 2px;  
   border-radius: 20px;
-  width: 300px;
 }
 
 img:hover {
@@ -19,6 +18,11 @@ img:hover {
 h1 {
   padding: 5px;
   background-color: rgb(30, 35, 36);
+}
+
+.x-navbar .desktop .x-nav > li > a > span {
+  padding: 5px 10px;
+  border: solid rgb(71, 54, 43) 1px;
 }
 
 label { 
