@@ -1,7 +1,7 @@
 const { createServer } = require("http");
 const { createReadStream } = require("fs");
 const { decode } = require("querystring");
-// const { updateDb } = require("./myModule");
+const { updateDb } = require("./mongoDbModule.js");
 
 const sendFile = (response, status, type, filePath) => {
   response.writeHead(status, { "Content-Type": type });
@@ -16,7 +16,8 @@ createServer((request, response) => {
     });
     request.on("end", () => {
       const { name, email, message } = decode(body);
-      // updateDb(email, name, message);
+      console.log(body)
+      //updateDb(email, name, message);
       console.log(`email: ${email}, name: ${name}, message:${message}`);
     });
   }
@@ -28,10 +29,6 @@ createServer((request, response) => {
       return sendFile(response, 200, "text/html", "./client/contact.html");
     case "/codeofconduct":
       return sendFile(response, 200, "text/html", "./client/codeofconduct.html");
-    // case "/testgame":
-    //   return sendFile(response, 200, "text/html", "./client/testgame.html");
-    // case "/client/testgame.js":
-    //   return sendFile(response, 200, "text/script", "./client/testgame.js");
     case "/img/niklas.jpeg":
       return sendFile(response, 200, "image/jpeg", "./client/niklas.jpeg");
     case "/img/become-a-good-programmer.jpeg":
